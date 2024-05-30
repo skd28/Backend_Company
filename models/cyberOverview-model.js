@@ -1,0 +1,56 @@
+const mongoose = require("mongoose");
+
+const cyberOverviewSchema = mongoose.Schema({
+  customerName: String,
+  cloud: String,
+  email: String,
+  on_premise: String,
+  forced_patching: String,
+  mfa: String,
+  lan: String,
+  endpoint: String,
+  remote_access: String,
+  managed_edr: String,
+  antivirus: String,
+  antispam: String,
+  antispearphising: String,
+  outbound_email_encryption: String,
+  web_browsing_protection: String,
+  asset_inventory: String,
+  application_whitelisting: String,
+  password_vault: String,
+  priviledged_access: String,
+  network_security: String,
+  disk_encryption: String,
+  cyber_insurance: String,
+  cyber_awareness_training: String,
+  regular_vulnerability_scans: String,
+  monitoring: String,
+  cloud_apps: String,
+  sso: String,
+  pii_data: String,
+  logging: String,
+  lan_network: String,
+  change_monitoring: String,
+  mobile_device_management: String,
+  ai_service: String,
+  disaster_recovery: String,
+  csf_assessment: String,
+  penetration_testing: String,
+  activate_protection_system: String,
+  ips: String,
+  threat_hunting: String,
+  waf: String,
+  dlp: String,
+  secure_data: String,
+  secure_telecom: String,
+  managed_security_operation_center: String,
+  data_governance: String,
+  compliance_service: String,
+});
+
+// define the model or the collection name
+
+const CyberOverview = mongoose.model("CyberOverview", cyberOverviewSchema);
+
+module.exports = CyberOverview;
